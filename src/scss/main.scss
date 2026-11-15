@@ -1,0 +1,875 @@
+@use 'pages/about';
+@use 'pages/cart';
+@use 'pages/catalog';
+@use 'pages/product-details';
+@use 'pages/contact';
+
+@use 'base/fonts' as fonts;
+
+@use 'components/forms';
+
+
+.content {
+    width: 100%;
+}
+
+.homepage_section,
+.offer_banner {
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homepage_section {
+    margin-top: 120px;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+}
+
+.offer_banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 407px;
+    min-height: 330px;
+    margin-top: 120px;
+    overflow: hidden;
+    color: fonts.$button_text_color;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.section_heading {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.section_title {
+    color: fonts.$link_black_color;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.section_subtitle {
+    color: #504E4A;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.homepage_h1 {
+    color: fonts.$link_black_color;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.homepage_h2 {
+    color: fonts.$link_black_color;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 22px;
+}
+
+.card_p_text {
+    color: #504E4A;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.homepage_button {
+    display: inline-block;
+    background-color: fonts.$logo-text-color;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.button_homepage_text {
+    color: fonts.$button_text_color;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.baground_smart_styles {
+    display: flex;
+    flex-direction: row;
+    height: 580px;
+    background-color: fonts.$baground_smart_styles_color;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.baground_smart_text {
+    width: 48%;
+}
+
+.baground_smart_img {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_image {
+    display: block;
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    object-fit: contain;
+}
+
+.group_cards {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    min-height: 420px;
+    margin: -75px auto 0;
+    background-color: fonts.$button_text_color;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.left_card,
+.right_card {
+    width: 50%;
+    min-width: 0;
+}
+
+.left_card {
+    padding: 45px;
+}
+
+.left_card_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cmo_image {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 18px;
+}
+
+.left_card_person {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.name {
+    color: fonts.$link_black_color;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.job_title {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.left_card .homepage_h2 {
+    font-size: 32px;
+}
+
+.left_card_upper_p_text,
+.left_card_under_p_text {
+    margin-top: 15px;
+}
+
+.right_card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: fonts.$button_text_color;
+}
+
+.right_card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.42);
+}
+
+.right_card_image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.right_card_content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+}
+
+.right_card .homepage_h2,
+.right_card .card_p_text {
+    color: fonts.$button_text_color;
+}
+
+.travel_cards {
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    gap: 28px;
+    transition: transform 400ms ease;
+}
+
+.travel_card {
+    position: relative;
+    flex: 0 0 calc((100% - 84px) / 4);
+    min-width: 0;
+    min-height: 420px;
+    overflow: hidden;
+    background-color: fonts.$baground_smart_styles_color;
+    cursor: pointer;
+    transition: box-shadow 300ms ease;
+}
+
+.travel_card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.72), transparent 70%);
+}
+
+.travel_card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease;
+}
+
+.travel_card_content {
+    position: absolute;
+    z-index: 2;
+    left: 22px;
+    right: 22px;
+    bottom: 25px;
+    color: fonts.$button_text_color;
+}
+
+.travel_card_content h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.travel_card_content p {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.product_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.product_card {
+    text-align: center;
+    min-width: 0;
+    cursor: pointer;
+    transition: transform 250ms ease;
+}
+
+.product_image_wrapper {
+    position: relative;
+    width: 100%;
+    height: 330px;
+    background-color: fonts.$baground_smart_styles_color;
+    margin-bottom: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.product_image_wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale_label {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    left: 12px;
+    padding: 5px 10px;
+    color: fonts.$button_text_color;
+    background-color: fonts.$logo-text-color;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.product_card h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.product_price {
+    font-size: 19px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.product_button {
+    padding: 9px 18px;
+    color: fonts.$button_text_color;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.offer_banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.38);
+}
+
+.offer_banner_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer_discount,
+.offer_content {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    padding: 35px;
+}
+
+.offer_discount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+
+}
+
+.offer_discount > p {
+    font-size: 223px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.offer_discount span {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.offer_content h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.offer_content p {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.testimonial_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testimonial_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 250px;
+    padding: 30px 25px;
+    background-color: fonts.$button_text_color;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial_card img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 22px;
+}
+
+.testimonial_card p {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.testimonial_card h3 {
+    color: fonts.$logo-text-color;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+// Travel Suitcases Slider
+
+.travel_slider_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.travel_slider_viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.travel_card:hover img {
+    transform: scale(1.08);
+}
+
+.travel_card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.travel_slider_button {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50%;
+    background-color: fonts.$logo-text-color;
+    color: fonts.$button_text_color;
+
+    font-size: 18px;
+    cursor: pointer;
+    transition: opacity 250ms ease;
+}
+
+.travel_slider_button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+
+.product_image_placeholder {
+    background-color: fonts.$baground_smart_styles_color;
+}
+
+.product_card:hover {
+    transform: translateY(-4px);
+}
+
+
+@media (min-width: 1440px) {
+    .homepage_section,
+    .offer_banner,
+    .group_cards {
+        max-width: 1200px;
+    }
+
+    .baground_smart_styles {
+        padding-left: max(10%, calc((100% - 1440px) / 2));
+        padding-right: max(10%, calc((100% - 1440px) / 2));
+    }
+}
+
+@media (max-width: 1439px) {
+    .homepage_section,
+    .offer_banner {
+        width: 86%;
+    }
+
+    .group_cards {
+        width: 86%;
+    }
+
+    .baground_smart_styles {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .homepage_h1 {
+        font-size: clamp(38px, 3.5vw, 50px);
+    }
+
+    .offer_discount > p {
+        font-size: clamp(110px, 15vw, 190px);
+    }
+}
+
+@media (max-width: 1023px) {
+    .homepage_section {
+        margin-top: 85px;
+    }
+
+    .baground_smart_styles {
+        height: auto;
+        min-height: 480px;
+        padding: 55px 6%;
+        gap: 25px;
+    }
+
+    .baground_smart_text,
+    .baground_smart_img {
+        width: 50%;
+        min-width: 0;
+    }
+
+    .homepage_h1 {
+        font-size: 38px;
+    }
+
+    .homepage_h2 {
+        font-size: 32px;
+    }
+
+    .group_cards {
+        width: 90%;
+        min-height: 0;
+    }
+
+    .left_card {
+        padding: 28px;
+    }
+
+    .left_card .homepage_h2 {
+        font-size: 26px;
+    }
+
+    .right_card_content {
+        padding: 28px;
+    }
+
+    .travel_card {
+        flex-basis: calc((100% - 28px) / 2);
+        min-height: 360px;
+    }
+
+    .product_cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .product_image_wrapper {
+        height: 280px;
+    }
+
+    .offer_banner {
+        height: auto;
+        min-height: 340px;
+    }
+
+    .offer_discount,
+    .offer_content {
+        padding: 25px;
+    }
+
+    .offer_discount > p {
+        font-size: clamp(100px, 13vw, 140px);
+    }
+
+    .offer_content h2 {
+        font-size: 32px;
+    }
+
+    .testimonial_cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .homepage_section,
+    .offer_banner {
+        width: 90%;
+    }
+
+    .homepage_section {
+        margin-top: 65px;
+    }
+
+    .section_heading {
+        margin-bottom: 25px;
+    }
+
+    .section_title {
+        font-size: 30px;
+    }
+
+    .section_subtitle {
+        font-size: 15px;
+    }
+
+    .homepage_h1 {
+        font-size: clamp(30px, 8vw, 36px);
+        margin-bottom: 15px;
+    }
+
+    .homepage_h2 {
+        font-size: 28px;
+    }
+
+    .card_p_text {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .baground_smart_styles {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        min-height: 0;
+        padding: 45px 6% 80px;
+        gap: 25px;
+    }
+
+    .baground_smart_text,
+    .baground_smart_img {
+        width: 100%;
+    }
+
+    .baground_smart_img {
+        margin-top: 0;
+    }
+
+    .header_image {
+        width: 100%;
+        max-width: 440px;
+        height: auto;
+    }
+
+    .group_cards {
+        flex-direction: column;
+        width: 90%;
+        min-height: 0;
+        margin-top: -45px;
+    }
+
+    .left_card,
+    .right_card {
+        width: 100%;
+    }
+
+    .left_card {
+        padding: 25px;
+    }
+
+    .left_card_header {
+        margin-bottom: 20px;
+    }
+
+    .cmo_image {
+        width: 55px;
+        height: 55px;
+        flex-shrink: 0;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .job_title {
+        font-size: 15px;
+    }
+
+    .left_card .homepage_h2 {
+        font-size: 25px;
+    }
+
+    .right_card {
+        min-height: 280px;
+    }
+
+    .right_card_content {
+        padding: 25px;
+    }
+
+    .travel_slider_wrapper {
+        gap: 8px;
+    }
+
+    .travel_slider_button {
+        width: 32px;
+        height: 32px;
+        font-size: 15px;
+    }
+
+    .travel_cards {
+        gap: 15px;
+    }
+
+    .travel_card {
+        flex-basis: 100%;
+        min-height: 320px;
+    }
+
+    .travel_card_content {
+        left: 15px;
+        right: 15px;
+        bottom: 18px;
+    }
+
+    .travel_card_content h3,
+    .travel_card_content p {
+        font-size: 17px;
+    }
+
+    .product_cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 12px;
+    }
+
+    .product_image_wrapper {
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin-bottom: 12px;
+    }
+
+    .product_card h3 {
+        font-size: 16px;
+    }
+
+    .product_price {
+        font-size: 16px;
+    }
+
+    .product_button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .offer_banner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        min-height: 0;
+        margin-top: 65px;
+        padding: 20px 0;
+    }
+
+    .offer_discount,
+    .offer_content {
+        width: 100%;
+        padding: 15px 22px;
+        margin: 0;
+    }
+
+    .offer_discount > p {
+        font-size: clamp(85px, 23vw, 120px);
+    }
+
+    .offer_discount span {
+        font-size: 17px;
+    }
+
+    .offer_content h2 {
+        font-size: 28px;
+    }
+
+    .offer_content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .testimonial_cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .testimonial_card {
+        min-height: 0;
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .homepage_section,
+    .offer_banner {
+        width: 92%;
+    }
+
+    .homepage_h1 {
+        font-size: 29px;
+    }
+
+    .section_title {
+        font-size: 26px;
+    }
+
+    .left_card {
+        padding: 20px;
+    }
+
+    .product_cards {
+        gap: 18px 10px;
+    }
+
+    .product_card h3,
+    .product_price {
+        font-size: 14px;
+    }
+
+    .product_button {
+        padding: 7px 9px;
+        font-size: 13px;
+    }
+
+    .travel_slider_button {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.content,
+.homepage_section,
+.group_cards,
+.travel_slider_wrapper,
+.travel_slider_viewport,
+.product_cards,
+.testimonial_cards {
+    min-width: 0;
+}
+
+.content img,
+.content video {
+    max-width: 100%;
+}
+
+.content video {
+    height: auto;
+}
+
+.homepage_section,
+.offer_banner,
+.group_cards,
+.product_card,
+.testimonial_card {
+    overflow-wrap: break-word;
+}
+

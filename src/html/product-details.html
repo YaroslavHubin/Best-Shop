@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/css/main.css">
+    <link rel="stylesheet" href="../../dist/css/layouts/header.css">
+    <link rel="stylesheet" href="../../dist/css/layouts/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Best Shop</title>
+</head>
+<body>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/product.js" defer></script>
+    <header>
+        <div class="header">
+            
+            <div class="social icons">
+                <img class="social icons" src="../../images for Capstone Projects/header/Homepage_17.png" alt="facebook">
+                <img class="social icons" src="../../images for Capstone Projects/header/Homepage_18.png" alt="twitter">
+                <img class="social icons" src="../../images for Capstone Projects/header/Homepage_19.png" alt="instagram">
+            </div>
+
+
+
+            <div class="logo">
+                <a href="../index.html" class="logo">
+                    <img class="best_shop_icon" src="../../images for Capstone Projects/header/Homepage_20.png" alt="logo">
+                    <p class="logo_text">BEST SHOP</p>
+                </a>
+            </div>
+
+
+
+            <div class="icons">
+                <button class="account_button" type="button" aria-label="Open login window">
+                    <img class="icons" src="../../images for Capstone Projects/header/Homepage_22.png" alt="client">
+                </button>
+
+                
+                <a href="./cart.html" class="cart_button" aria-label="Open shopping cart">
+                    <img class="icons" src="../../images for Capstone Projects/header/Homepage_21.png" alt="shop">
+                    <span class="cart_counter" id="cartCounter">0</span>
+                </a>                   
+            </div>
+
+            <button class="mobile_menu_toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNavigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <hr class="header_hr">
+
+        <div class="products" id="mainNavigation" aria-label="Main navigation">
+            
+            <a class="headers_link_a" href="../../src/index.html">Home</a>
+            <a class="headers_link_a" href="../../src/html/catalog.html">
+                Catalog<span class="catalog_arrow"></span>            
+            </a>
+            <a class="headers_link_a" href="../../src/html/about.html">About Us</a>
+            <a class="headers_link_a" href="../../src/html/contact.html">Contact Us</a>
+
+        </div>
+    </header>
+
+    <main class="product_details_page">
+
+        <section class="product_details">
+            <div class="product_gallery">
+                <div class="product_main_image">
+                    <img id="productMainImage" src="" alt="">
+                </div>
+            
+                <div class="product_thumbnails" id="productThumbnails">
+                    
+                    <img class="product_thumbnail" src="../../images for Capstone Projects/Product Card/suitcase-small-card-1.png" alt="Product 1">
+                
+                    <img class="product_thumbnail" src="../../images for Capstone Projects/Product Card/suitcase-small-4.png" alt="Product 2">
+                
+                    <img class="product_thumbnail" src="../../images for Capstone Projects/Product Card/suitcase-small-2.png" alt="Product 3">
+
+                    <img class="product_thumbnail" src="../../images for Capstone Projects/Product Card/yellow_open1.png" alt="Product 4">
+                </div>
+            </div>
+
+            <div class="product_information">
+                <h1 class="product_details_title" id="productName">
+                    Loading product...
+                </h1>
+
+                <div class="product_rating">
+                    <span class="product_rating_stars" id="productRatingStars"></span>
+                    <span class="product_rating_value" id="productRatingValue"></span>
+                    <a href="#productReviews" class="product_reviews_link">
+                        Clients Review
+                    </a>
+                </div>
+
+                <p class="product_details_price" id="productPrice"></p>
+
+                <div class="product_description">
+                    <p>
+                        The new Global Explorer Max Comfort Suitcase Pro is a bold
+                        reimagining of travel essentials, designed to elevate every
+                        journey. Made with at least 30% recycled materials, its
+                        lightweight yet impact-resistant shell combines
+                        eco-conscious innovation with rugged durability.
+                    </p>
+
+                    <p>
+                        The ergonomic handle and GlideMotion spinner wheels ensure
+                        effortless mobility while making a statement in sleek design.
+                        Inside, the modular compartments and adjustable straps keep
+                        your belongings secure and neatly organized, no matter the
+                        destination.
+                    </p>
+                </div>
+
+                <div class="product_options">
+                    <label for="productSize">Size</label>
+                    <select id="productSize">
+                        <option value="">Choose option</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="S-L">S-L</option>
+                        <option value="S, M, XL">S, M, XL</option>
+                    </select>
+
+                    <label for="productColor">Color</label>
+                    <select id="productColor">
+                        <option value="">Choose option</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="black">Black</option>
+                        <option value="grey">Grey</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="pink">Pink</option>
+                        <option value="beige">Beige</option>
+                    </select>
+
+                    <label for="productCategory">Category</label>
+                    <select id="productCategory">
+                        <option value="">Choose option</option>
+                        <option value="carry-ons">Carry-ons</option>
+                        <option value="suitcases">Suitcases</option>
+                        <option value="luggage sets">Luggage sets</option>
+                        <option value="kids' luggage">Kids' luggage</option>
+                    </select>
+                </div>
+
+                <div class="product_purchase">
+                    <div class="quantity_selector">
+                        <button class="quantity_button" id="decreaseQuantity" type="button" aria-label="Decrease quantity">−</button>
+
+                        <span id="productQuantity" aria-live="polite">1</span>
+
+                        <button class="quantity_button" id="increaseQuantity" type="button" aria-label="Increase quantity">+</button>
+                    </div>
+
+                    <button class="product_add_to_cart" id="productAddToCart" type="button">
+                        Add To Cart
+                    </button>
+                </div>
+
+                <p class="product_add_message" id="productAddMessage" aria-live="polite"></p>
+
+                <div class="product_payment">
+                    <span class="payment_title">Payment:</span>
+                
+                    <span class="payment_logo payment_visa">VISA</span>
+
+                        <span class="payment_logo payment_amex">
+                        <span>AMERICAN</span>
+                        <span>EXPRESS</span>
+                    </span>
+                
+                    <span class="payment_logo payment_mastercard">
+                        <span class="mastercard_circles">
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="mastercard_text">Mastercard</span>
+                    </span>
+                
+                    <span class="payment_logo payment_paypal">
+                        <span>Pay</span><span>Pal</span>
+                    </span>
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="product_tabs_section">
+            <div class="product_tabs" role="tablist" aria-label="Product information">
+                <button
+                    class="product_tab active"
+                    id="detailsTab"
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="detailsPanel"
+                >
+                    DETAILS
+                </button>
+
+                <button class="product_tab" id="reviewsTab" type="button" role="tab" aria-selected="false" aria-controls="reviewsPanel">
+                    REVIEWS
+                </button>
+
+                <button class="product_tab" id="shippingTab" type="button" role="tab" aria-selected="false" aria-controls="shippingPanel">
+                    SHIPPING POLICY
+                </button>
+            </div>
+
+            <div class="product_tab_panel" id="detailsPanel" role="tabpanel">
+                <p>
+                    Vestibulum commodo sapien non elit porttitor, vitae volutpat
+                    nibh mollis. Nulla porta risus id neque tempor, in efficitur
+                    justo imperdiet. Etiam a ex at ante tincidunt imperdiet.
+                    Nunc congue ex vel nisl viverra, sit amet aliquet lectus
+                    ullamcorper. Praesent luctus lacus non lorem elementum, eu
+                    tristique sapien suscipit. Sed bibendum, ipsum nec viverra
+                    malesuada, erat nisi sodales purus, eget hendrerit dui ligula
+                    eu enim. Ut non est nisi. Pellentesque tristique pretium dolor
+                    eu commodo.
+                </p>
+
+                <p>
+                    Proin iaculis nibh vitae lectus mollis bibendum. Quisque
+                    varius eget urna sit amet luctus. Suspendisse potenti.
+                    Curabitur ac placerat est, sit amet sodales risus.
+                    Pellentesque viverra dui auctor, ullamcorper turpis pharetra,
+                    facilisis quam.
+                </p>
+
+                <p>
+                    Quisque varius eget urna sit amet luctus. Suspendisse
+                    potenti. Curabitur ac placerat est, sit amet sodales risus.
+                    Pellentesque viverra dui auctor, ullamcorper turpis pharetra,
+                    facilisis quam.
+                </p>
+            </div>
+
+
+
+            <div class="product_tab_panel reviews_panel" id="reviewsPanel" role="tabpanel" hidden>
+
+                <div class="reviews_content">
+                
+                    <div class="reviews_list">
+
+                        <h2 class="reviews_heading">
+                            1 review for Global Explorer Max Comfort Suitcase Pro
+                        </h2>
+                    
+                        <article class="review_item">
+                        
+                            <img class="review_customer_image" src="../../images for Capstone Projects/Product Card/review customer.png" alt="Ella Harper">
+                        
+                            <div class="review_customer_content">
+                            
+                                <div class="review_author">
+                                    <h3>Ella Harper</h3>
+                                    <span>/ June 11, 2025</span>
+                                </div>
+                            
+                                <div class="review_stars" aria-label="4 out of 5 stars">
+                                    <span class="filled">★★★★</span><span class="empty">★</span>
+                                </div>
+                            
+                                <p class="review_text">
+                                    Proin iaculis nibh vitae lectus mollis bibendum.
+                                    Quisque varius eget urna sit amet luctus.
+                                    Suspendisse potenti curabitur ac placerat est,
+                                    sit amet sodales risus.
+                                </p>
+                            
+                            </div>
+                        
+                        </article>
+                    
+                    </div>
+                
+                    <div class="add_review">
+                    
+                        <h2 class="reviews_heading">Add Review</h2>
+                    
+                        <p class="review_notice">
+                            Your email address won't be shared with anybody.
+                            Required fields have the symbol 
+                            <span class="required_star">*</span>
+                        </p>
+                    
+                        <form id="reviewForm" novalidate>
+                        
+                            <fieldset class="review_rating_fieldset">
+                            
+                                <legend>RATE PRODUCT</legend>
+                            
+                                <div class="review_rating_options">
+                                
+                                    <label>
+                                        <input type="radio" name="rating" value="1">
+                                        <span>★</span>
+                                    </label>
+                                
+                                    <label>
+                                        <input type="radio" name="rating" value="2">
+                                        <span>★</span>
+                                    </label>
+                                
+                                    <label>
+                                        <input type="radio" name="rating" value="3">
+                                        <span>★</span>
+                                    </label>
+                                
+                                    <label>
+                                        <input type="radio" name="rating" value="4">
+                                        <span>★</span>
+                                    </label>
+                                
+                                    <label>
+                                        <input type="radio" name="rating" value="5">
+                                        <span>★</span>
+                                    </label>
+                                
+                                </div>
+                            
+                                <span class="review_field_error" id="ratingError"></span>
+                            
+                            </fieldset>
+                        
+                            <div class="review_form_field">
+                            
+                                <label for="reviewText">
+                                    Your Review<span class="required_star">*</span>
+                                </label>
+                            
+                                <textarea
+                                    id="reviewText"
+                                    name="review"
+                                    placeholder="Your Review*"
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            
+                                <span class="review_field_error" id="reviewTextError"></span>
+                            
+                            </div>
+
+                            <div class="review_form_row">
+                            
+                                <div class="review_form_field">
+                                
+                                    <label for="reviewName">
+                                        Your Name<span class="required_star">*</span>
+                                    </label>
+                                
+                                    <input
+                                        type="text"
+                                        id="reviewName"
+                                        name="name"
+                                        placeholder="Your Name*"
+                                        required
+                                    >
+                                
+                                    <span class="review_field_error" id="reviewNameError"></span>
+                                
+                                </div>
+                            
+                                <div class="review_form_field">
+                                
+                                    <label for="reviewEmail">
+                                        Your Email<span class="required_star">*</span>
+                                    </label>
+                                
+                                    <input
+                                        type="email"
+                                        id="reviewEmail"
+                                        name="email"
+                                        placeholder="Your Email*"
+                                        required
+                                    >
+                                
+                                    <span class="review_field_error" id="reviewEmailError"></span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                            <label class="review_save_info">
+                            
+                                <input
+                                    type="checkbox"
+                                    id="saveReviewInfo"
+                                    name="saveInfo"
+                                >
+                            
+                                <span>
+                                    Save my name, email, and website in this browser
+                                    for when I leave another comment.
+                                </span>
+                            
+                            </label>
+                        
+                            <p
+                                class="review_form_message"
+                                id="reviewFormMessage"
+                                aria-live="polite"
+                            ></p>
+                        
+
+                            <button type="submit" class="review_submit">
+                                SUBMIT
+                            </button>
+                        
+                        </form>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+
+
+
+            <div class="product_tab_panel" id="shippingPanel" role="tabpanel" hidden>
+                <h2>Shipping Information</h2>
+                <p>
+                    We carefully prepare every order for shipment. Delivery
+                    times and shipping costs may vary depending on the
+                    destination. You will receive order and shipping information
+                    after your purchase.
+                </p>
+            </div>
+        </section>
+
+        <section class="you_may_also_like">
+            <h2 class="section_title">You May Also Like</h2>
+            <div class="product_cards" id="recommendedProducts"></div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <section class="our_benefits">
+            <div class="footer_container">
+                <h2 class="benefits_title">Our Benefits</h2>
+
+                <div class="benefits_items">
+                    <div class="benefit_item">
+                        <img src="../../images for Capstone Projects/footer/footer-1.png" alt="">
+                        <p>Velit nisl sodales eget donec quis. volutpat orci.</p>
+                    </div>
+
+                    <div class="benefit_item">
+                        <img src="../../images for Capstone Projects/footer/footer-2.png" alt="">
+                        <p>Dolor eu varius. Morbi fermentum velit nisl.</p>
+                    </div>
+
+                    <div class="benefit_item">
+                        <img src="../../images for Capstone Projects/footer/footer-3.png" alt="">
+                        <p>Malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>
+
+                    <div class="benefit_item">
+                        <img src="../../images for Capstone Projects/footer/footer-4.png" alt="">
+                        <p>Nisl sodales eget donec quis. volutpat orci.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer_container footer_main">
+
+            <div class="footer_content">
+            
+                <div class="footer_left">
+                
+                    <div class="footer_links">
+                    
+                        <div class="footer_column">
+                            <h3><a class="footer_link_a" href="../html/about.html">About Us</a></h3>
+                            <a href="#">Organisation</a>
+                            <a href="#">Partners</a>
+                            <a href="#">Clients</a>
+                        </div>
+                    
+                        <div class="footer_column">
+                            <h3>Interesting Links</h3>
+                            <a href="#">Photo Gallery</a>
+                            <a href="#">Our Team</a>
+                            <a href="#">Socials</a>
+                        </div>
+                    
+                        <div class="footer_column">
+                            <h3>Achievements</h3>
+                            <a href="#">Winning Awards</a>
+                            <a href="#">Press</a>
+                            <a href="#">Our Amazing Clients</a>
+                        </div>
+                    
+                    </div>
+                
+                    <div class="shipping_information">
+                        <h3>Shipping Information</h3>
+                    
+                        <p>
+                            Nulla eleifend pulvinar purus, molestie euismod odio imperdiet ac.
+                            Ut sit amet erat nec nibh rhoncus varius in non lorem.
+                            Donec interdum, lectus in convallis pulvinar, enim elit porta sapien,
+                            vel finibus erat felis sed neque.
+                            Etiam aliquet neque sagittis erat tincidunt aliquam.
+                        </p>
+                    </div>
+                
+                </div>
+            
+                <div class="footer_right">
+                
+                    <div class="footer_contact">
+                        <h3><a class="footer_link_a" href="../html/contact.html">Contact Us</a></h3>
+                    
+                        <p>
+                            Bendum dolor eu varius. Morbi fermentum velitsodales
+                            egetonec. volutpat orci. Sed ipsum felis, tristique
+                            egestas et, convallis ac velitn consequat nec luctus.
+                        </p>
+                    </div>
+                
+                
+                    <div class="footer_contact_details">
+                    
+                        <div class="footer_contact_item">
+                            <img src="../../images for Capstone Projects/footer/footer-5.png" alt="Phone">
+                            <p>Phone: (+63) 236 6322</p>
+                        </div>
+                    
+                        <div class="footer_contact_item">
+                            <img src="../../images for Capstone Projects/footer/footer-6.png" alt="Email">
+                            <p>public@news.com</p>
+                        </div>
+                    
+                        <div class="footer_contact_item">
+                            <img src="../../images for Capstone Projects/footer/footer-7.png" alt="Working hours">
+                            <p>
+                                Mon - Fri: 10am - 6pm
+                                <br>
+                                Sat - Sun: 10am - 6pm
+                            </p>
+                        </div>
+                    
+                        <div class="footer_contact_item">
+                            <img src="../../images for Capstone Projects/footer/footer-8.png" alt="Location">
+                            <p>
+                                639 Jade Valley,
+                                <br>
+                                Washington Dc
+                            </p>
+                        </div>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>        
+        
+            <p class="copyright">© Copyright 2025</p>
+        
+        </div>
+    </footer>
+
+    <!-- Login -->
+    <dialog class="login_overlay" id="loginModal" aria-labelledby="loginTitle">
+
+        <div class="login_modal">
+
+            <button class="login_close" type="button" aria-label="Close login window">
+                &times;
+            </button>
+
+            <form id="loginForm">
+
+                <div class="login_field">
+                    <label for="loginEmail">Email address *</label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        name="email"
+                        placeholder="Enter your email"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                        required
+                    >
+                </div>
+
+                <div class="login_field">
+                    <label for="loginPassword">Password *</label>
+
+                    <div class="password_wrapper">
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password_toggle"
+                            aria-label="Show password"
+                            aria-pressed="false"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                width="22"
+                                height="22"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                aria-hidden="true"
+                            >
+                                <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login_options">
+
+                    <label class="remember_me">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+
+                    <a class="forgot_password" href="#">
+                        Forgot Your Password?
+                    </a>
+
+                </div>
+
+                <button type="submit" class="login_submit">
+                    LOG IN
+                </button>
+
+            </form>
+
+        </div>
+
+    </dialog>
+
+
+</body>
+</html>

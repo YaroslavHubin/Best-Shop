@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <link rel="stylesheet" href="../dist/css/layouts/header.css">
+    <link rel="stylesheet" href="../dist/css/layouts/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Best Shop</title>
+</head>
+<body>
+    <script type="module" src="./js/main.js"></script>
+    <header>
+        <div class="header">
+            
+            <div class="social icons">
+                <img class="social icons" src="../images for Capstone Projects/header/Homepage_17.png" alt="facebook">
+                <img class="social icons" src="../images for Capstone Projects/header/Homepage_18.png" alt="twitter">
+                <img class="social icons" src="../images for Capstone Projects/header/Homepage_19.png" alt="instagram">
+            </div>
+
+
+
+            <div class="logo">
+                <a href="./index.html" class="logo">
+                    <img class="best_shop_icon" src="../images for Capstone Projects/header/Homepage_20.png" alt="logo">
+                    <p class="logo_text">BEST SHOP</p>
+                </a>
+            </div>
+
+
+
+            <div class="icons">
+                <button class="account_button" type="button" aria-label="Open login window">
+                    <img class="icons" src="../images for Capstone Projects/header/Homepage_22.png" alt="client">
+                </button>
+
+                
+                <a href="./html/cart.html" class="cart_button" aria-label="Open shopping cart">
+                    <img class="icons" src="../images for Capstone Projects/header/Homepage_21.png" alt="shop">
+                    <span class="cart_counter" id="cartCounter">0</span>
+                </a>                   
+            </div>
+
+            <button class="mobile_menu_toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNavigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <hr class="header_hr">
+
+        <div class="products" id="mainNavigation" aria-label="Main navigation">
+            
+            <a class="headers_link_a" href="../src/index.html">Home</a>
+            <a class="headers_link_a" href="../src/html/catalog.html">
+                Catalog<span class="catalog_arrow"></span>            
+            </a>
+            <a class="headers_link_a" href="../src/html/about.html">About Us</a>
+            <a class="headers_link_a" href="../src/html/contact.html">Contact Us</a>
+
+        </div>
+    </header>
+
+    <main class="content">
+
+        <section class="hero">
+            <div class="baground_smart_styles">
+                <div class="baground_smart_text">
+                    <h1 class="homepage_h1">Smart Styles for<br>Every Destination</h1>
+
+                    <p class="card_p_text">
+                        Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim.
+                        <br>
+                        Nullam pulvinar felis at metus.
+                    </p>
+
+                    <button class="homepage_button" type="button">
+                        <span class="button_homepage_text">View All Items</span>
+                    </button>
+                </div>
+
+                <div class="baground_smart_img">
+                    <img class="header_image"
+                         src="../images for Capstone Projects/Homepage/header image.png"
+                         alt="Vintage travel suitcase">
+                </div>
+            </div>
+
+            <div class="group_cards">
+                <div class="left_card">
+                    <div class="left_card_header">
+                        <img class="cmo_image"
+                             src="../images for Capstone Projects/Homepage/CMO image.png"
+                             alt="Lillian Bennett">
+
+                        <div class="left_card_person">
+                            <p class="name">Lillian Bennett</p>
+                            <p class="job_title">Chief Marketing Officer</p>
+                        </div>
+                    </div>
+
+                    <h2 class="homepage_h2">Aliquam Faucibus<br>Odionecom.</h2>
+
+                    <div class="left_card_upper_p_text">
+                        <p class="card_p_text">
+                            Duis vestibulum elit vel neque pharetra vulputate.
+                            Quisque scelerisque nisi urna. Duis rutrum non risus in
+                            imperdiet. Proin molestie accumsan nulla sit.
+                        </p>
+                    </div>
+
+                    <div class="left_card_under_p_text">
+                        <p class="card_p_text">
+                            Namaki duis vestibulum elit vel neque pharetra vulputate.
+                            Quisque scelerisque nisi urna.</p>
+                    </div>
+                </div>
+
+                <div class="right_card">
+                    <img class="right_card_image"
+                         src="../images for Capstone Projects/Homepage/suitcases main banner.png"
+                         alt="Two travel suitcases">
+
+                    <div class="right_card_content">
+                        <h2 class="homepage_h2">25 % Discount</h2>
+                        <p class="card_p_text">
+                            Curabitur vulputate arcu odio, ac facilisis diam
+                            accumsan ut. Ut imperdiet et leo in vulputate.
+                        </p>
+
+                        <button class="homepage_button" type="button">
+                            <span class="button_homepage_text">Get Discount</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="travel_suitcases homepage_section">
+
+            <div class="section_heading">
+                <h2 class="section_title">Travel suitcases</h2>
+                <p class="section_subtitle">
+                    Duis vestibulum elit vel neque pharetra
+                </p>
+            </div>
+        
+            <div class="travel_slider_wrapper">
+            
+                <button class="travel_slider_button travel_slider_previous" type="button" aria-label="Previous slides">
+                    &#10094;
+                </button>
+            
+                <div class="travel_slider_viewport">
+                    <div class="travel_cards">
+                    
+                        <article class="travel_card">
+                            <img src="../images for Capstone Projects/Homepage/suitcase real-live.png" alt="Travel suitcase">
+                            <div class="travel_card_content">
+                            </div>
+                        </article>
+                    
+                        <article class="travel_card">
+                            <img src="../images for Capstone Projects/Homepage/suitcase real-live-1.png" alt="Travel suitcase">
+                            <div class="travel_card_content">
+                            </div>
+                        </article>
+                    
+                        <article class="travel_card">
+                            <img src="../images for Capstone Projects/Homepage/suitcase real-live-2.png" alt="Travel suitcase">
+                            <div class="travel_card_content">
+                            </div>
+                        </article>
+                    
+                        <article class="travel_card">
+                            <img src="../images for Capstone Projects/Homepage/suitcase real-live-3.png" alt="Travel suitcase">
+                            <div class="travel_card_content">
+                            </div>
+                        </article>
+                    
+                    </div>
+                </div>
+            
+                <button class="travel_slider_button travel_slider_next" type="button" aria-label="Next slides">
+                    &#10095;
+                </button>
+            
+            </div>
+        
+        </section>
+
+        <section class="selected_products homepage_section">
+            <div class="section_heading">
+                <h2 class="section_title">Selected Products</h2>
+                <p class="section_subtitle">Duis vestibulum elit vel neque pharetra</p>
+            </div>
+
+            <div class="product_cards">
+
+            </div>  
+        </section>
+
+        <section class="offer_banner">
+            <img class="offer_banner_image"
+                 src="../images for Capstone Projects/Homepage/offer of the month image.png"
+                 alt="Special offer banner">
+
+            <div class="offer_discount">
+                <p>50%</p>
+                <span>Curabitur vulputate arcu odio, ac facilisis diam.</span>
+            </div>
+
+            <div class="offer_content">
+                <h2>Offer Of The Month</h2>
+                <p>Curabitur vulputate arcu odio, ac facilisis diam accumsan ut. Ut imperdiet et leo in vulputate.</p>
+                <button class="homepage_button" type="button">
+                    <span class="button_homepage_text">Get Offer Today</span>
+                </button>
+            </div>
+        </section> 
+
+        <section class="new_products_arrival homepage_section">
+            <div class="section_heading">
+                <h2 class="section_title">New Products Arrival</h2>
+                <p class="section_subtitle">Duis vestibulum elit vel neque pharetra</p>
+            </div>
+
+            <div class="product_cards">
+                <article class="product_card">
+                    <div class="product_image_wrapper">
+                        <img src="../images for Capstone Projects/Homepage/suitcase hand grey.png" alt="Silver travel suitcase">
+                    </div>
+                    <h3>Vel vestibulum elit<br>tuvel euqen.</h3>
+                    <p class="product_price">$150</p>
+                    <button class="homepage_button product_button" type="button">View Product</button>
+                </article>
+
+                <article class="product_card">
+                    <div class="product_image_wrapper">
+                        <span class="sale_label">SALE</span>
+                        <img src="../images for Capstone Projects/Homepage/suitcase small yellow.png" alt="Yellow travel suitcase">
+                    </div>
+                    <h3>Vel vestibulum elit<br>tuvel euqen.</h3>
+                    <p class="product_price">$450</p>
+                    <button class="homepage_button product_button" type="button">View Product</button>
+                </article>
+
+                <article class="product_card">
+                    <div class="product_image_wrapper">
+                        <img src="../images for Capstone Projects/Homepage/suitcase blue.png" alt="Light blue travel suitcase">
+                    </div>
+                    <h3>Vel vestibulum elit<br>tuvel euqen.</h3>
+                    <p class="product_price">$250</p>
+                    <button class="homepage_button product_button" type="button">View Product</button>
+                </article>
+
+                <article class="product_card">
+                    <div class="product_image_wrapper">
+                        <span class="sale_label">SALE</span>
+                        <img src="../images for Capstone Projects/Homepage/suitcase dark-blue.png" alt="Dark blue travel suitcase">
+                    </div>
+                    <h3>Vel vestibulum elit<br>tuvel euqen.</h3>
+                    <p class="product_price">$200</p>
+                    <button class="homepage_button product_button" type="button">View Product</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials homepage_section">
+            <div class="section_heading">
+                <h2 class="section_title">Our Grateful Customers</h2>
+                <p class="section_subtitle">Duis vestibulum elit vel neque pharetra</p>
+            </div>
+
+            <div class="testimonial_cards">
+                <article class="testimonial_card">
+                    <img src="../images for Capstone Projects/Homepage/grateful customer 1.png" alt="Customer portrait">
+                    <p>Curabitur vulputate arcu odio, ac facilisis diam accumsan ut. Ut imperdiet et leo in vulputate.</p>
+                    <h3>Ethan Wade, New York</h3>
+                </article>
+
+                <article class="testimonial_card">
+                    <img src="../images for Capstone Projects/Homepage/grateful customer 2.png" alt="Customer portrait">
+                    <p>Curabitur vulputate arcu odio, ac facilisis diam accumsan ut. Ut imperdiet et leo in vulputate.</p>
+                    <h3>Jane Reyes, California</h3>
+                </article>
+
+                <article class="testimonial_card">
+                    <img src="../images for Capstone Projects/Homepage/grateful customer 3.png" alt="Customer portrait">
+                    <p>Curabitur vulputate arcu odio, ac facilisis diam accumsan ut. Ut imperdiet et leo in vulputate.</p>
+                    <h3>Erica Banks, Miami</h3>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <section class="our_benefits">
+            <div class="footer_container">
+                <h2 class="benefits_title">Our Benefits</h2>
+
+                <div class="benefits_items">
+                    <div class="benefit_item">
+                        <img src="../images for Capstone Projects/footer/footer-1.png" alt="">
+                        <p>Velit nisl sodales eget donec quis. volutpat orci.</p>
+                    </div>
+
+                    <div class="benefit_item">
+                        <img src="../images for Capstone Projects/footer/footer-2.png" alt="">
+                        <p>Dolor eu varius. Morbi fermentum velit nisl.</p>
+                    </div>
+
+                    <div class="benefit_item">
+                        <img src="../images for Capstone Projects/footer/footer-3.png" alt="">
+                        <p>Malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>
+
+                    <div class="benefit_item">
+                        <img src="../images for Capstone Projects/footer/footer-4.png" alt="">
+                        <p>Nisl sodales eget donec quis. volutpat orci.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer_container footer_main">
+
+            <div class="footer_content">
+            
+                <div class="footer_left">
+                
+                    <div class="footer_links">
+                    
+                        <div class="footer_column">
+                            <h3><a class="footer_link_a" href="../src/html/about.html">About Us</a></h3>
+                            <a href="#">Organisation</a>
+                            <a href="#">Partners</a>
+                            <a href="#">Clients</a>
+                        </div>
+                    
+                        <div class="footer_column">
+                            <h3>Interesting Links</h3>
+                            <a href="#">Photo Gallery</a>
+                            <a href="#">Our Team</a>
+                            <a href="#">Socials</a>
+                        </div>
+                    
+                        <div class="footer_column">
+                            <h3>Achievements</h3>
+                            <a href="#">Winning Awards</a>
+                            <a href="#">Press</a>
+                            <a href="#">Our Amazing Clients</a>
+                        </div>
+                    
+                    </div>
+                
+                    <div class="shipping_information">
+                        <h3>Shipping Information</h3>
+                    
+                        <p>
+                            Nulla eleifend pulvinar purus, molestie euismod odio imperdiet ac.
+                            Ut sit amet erat nec nibh rhoncus varius in non lorem.
+                            Donec interdum, lectus in convallis pulvinar, enim elit porta sapien,
+                            vel finibus erat felis sed neque.
+                            Etiam aliquet neque sagittis erat tincidunt aliquam.
+                        </p>
+                    </div>
+                
+                </div>
+            
+                <div class="footer_right">
+                
+                    <div class="footer_contact">
+                        <h3><a class="footer_link_a" href="../src/html/contact.html">Contact Us</a></h3>
+                    
+                        <p>
+                            Bendum dolor eu varius. Morbi fermentum velitsodales
+                            egetonec. volutpat orci. Sed ipsum felis, tristique
+                            egestas et, convallis ac velitn consequat nec luctus.
+                        </p>
+                    </div>
+                
+                
+                    <div class="footer_contact_details">
+                    
+                        <div class="footer_contact_item">
+                            <img src="../images for Capstone Projects/footer/footer-5.png" alt="Phone">
+                            <p>Phone: (+63) 236 6322</p>
+                        </div>
+                    
+                        <div class="footer_contact_item">
+                            <img src="../images for Capstone Projects/footer/footer-6.png" alt="Email">
+                            <p>public@news.com</p>
+                        </div>
+                    
+                        <div class="footer_contact_item">
+                            <img src="../images for Capstone Projects/footer/footer-7.png" alt="Working hours">
+                            <p>
+                                Mon - Fri: 10am - 6pm
+                                <br>
+                                Sat - Sun: 10am - 6pm
+                            </p>
+                        </div>
+                    
+                        <div class="footer_contact_item">
+                            <img src="../images for Capstone Projects/footer/footer-8.png" alt="Location">
+                            <p>
+                                639 Jade Valley,
+                                <br>
+                                Washington Dc
+                            </p>
+                        </div>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>        
+        
+            <p class="copyright">© Copyright 2025</p>
+        
+        </div>
+    </footer>
+
+
+    <!-- Login -->
+    <dialog class="login_overlay" id="loginModal" aria-labelledby="loginTitle">
+
+        <div class="login_modal">
+
+            <button class="login_close" type="button" aria-label="Close login window">
+                &times;
+            </button>
+
+            <form id="loginForm">
+
+                <div class="login_field">
+                    <label for="loginEmail">Email address *</label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        name="email"
+                        placeholder="Enter your email"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                        required
+                    >
+                </div>
+
+                <div class="login_field">
+                    <label for="loginPassword">Password *</label>
+
+                    <div class="password_wrapper">
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password_toggle"
+                            aria-label="Show password"
+                            aria-pressed="false"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                width="22"
+                                height="22"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                aria-hidden="true"
+                            >
+                                <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login_options">
+
+                    <label class="remember_me">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+
+                    <a class="forgot_password" href="#">
+                        Forgot Your Password?
+                    </a>
+
+                </div>
+
+                <button type="submit" class="login_submit">
+                    LOG IN
+                </button>
+
+            </form>
+
+        </div>
+
+    </dialog>
+</body>
+</html>
